@@ -6,13 +6,16 @@
         "dev": "vite",
         "build": "tsc && vite build",
         "preview": "vite preview",
-        "lint": "eslint ."
+        "lint": "eslint .",
+        "svgr": "zsh -c 'npx @svgr/cli --typescript --out-dir src/assets/icons/components src/assets/icons/svg/$0'"
     },
     "dependencies": {
         "react": "^18.0.0",
-        "react-dom": "^18.0.0"
+        "react-dom": "^18.0.0",
+        "react-router-dom": "6"
     },
     "devDependencies": {
+        "@svgr/cli": "^6.2.1",
         "@types/react": "^18.0.0",
         "@types/react-dom": "^18.0.0",
         "@typescript-eslint/eslint-plugin": "^5.30.5",
