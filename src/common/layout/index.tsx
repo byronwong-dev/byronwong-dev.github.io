@@ -1,17 +1,17 @@
 import { PropsWithChildren } from "react"
 import Navigation from "./navigation"
-import { MenuItem } from "./types"
+import { RouteLink } from "../types"
 
 
 interface LayoutProp extends PropsWithChildren {
-  menu: MenuItem[] 
+  routes: RouteLink[] 
 }
 
 const Layout = (prop: LayoutProp) => {
 
   return <div className="w-full h-screen transition-colors duration-500 bg-white dark:bg-gray-800">
-    <div className="py-5 m-auto md:max-w-5xl">
-    <Navigation className="mt-8" menu={prop.menu} />
+    <div className="py-5 m-auto md:max-w-3xl">
+    <Navigation className="mt-8" routes={prop.routes} />
     {prop.children}
     </div>
   </div>

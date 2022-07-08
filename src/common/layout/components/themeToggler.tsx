@@ -18,7 +18,7 @@ const ThemeToggler = () => {
       isDarkTheme && <SvgSunlight className="w-8 h-8 text-white"></SvgSunlight>
     }
     {
-      !isDarkTheme && <SvgNight className="w-8 h-8 text-gray-900"></SvgNight>
+      !isDarkTheme && <SvgNight className="w-8 h-8 text-gray-700"></SvgNight>
     }
   </button>
 }

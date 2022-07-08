@@ -5,8 +5,8 @@ function App() {
 
   return (
     <div className="App">
-      <Layout menu={routes}>
-        <div>this is a header</div>
+      <Layout routes={routes}>
+
       </Layout>
     </div>
   )

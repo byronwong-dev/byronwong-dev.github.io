@@ -1,11 +1,14 @@
-export const routes = [
+import { RouteLink } from "./common/types";
+
+export const routes: RouteLink[] = [
   {
     path: '/',
-    name: 'home'
+    name: 'byronwong.dev',
   },
   {
     path: '#',
-    name: 'thoughts'
+    name: 'engineering',
+    disabled: true
   },
   {
     path: '/about',
@@ -13,6 +16,7 @@ export const routes = [
   },
   {
     path: '#',
-    name: 'use-cases'
+    name: 'use-cases',
+    disabled: true
   },
 ]
