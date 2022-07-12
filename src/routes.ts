@@ -1,4 +1,4 @@
-import { RouteLink } from "./common/types";
+import { RouteLink } from "./pages/common/types";
 
 export const routes: RouteLink[] = [
   {
@@ -12,7 +12,7 @@ export const routes: RouteLink[] = [
   },
   {
     path: '/about',
-    name: 'about'
+    name: 'about',
   },
   {
     path: '#',

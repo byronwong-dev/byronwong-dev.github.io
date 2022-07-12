@@ -1,4 +1,4 @@
-import Layout from './common/layout'
+import Layout from './pages/layout'
 import { routes } from './routes'
 
 function App() {
@@ -6,7 +6,6 @@ function App() {
   return (
     <div className="App">
       <Layout routes={routes}>
-
       </Layout>
     </div>
   )

@@ -1,6 +1,6 @@
 import { useState } from "react"
-import SvgNight from "../../../assets/icons/components/svgNight"
-import SvgSunlight from "../../../assets/icons/components/svgSunlight"
+import SvgNight from "../../assets/icons/components/svgNight"
+import SvgSunlight from "../../assets/icons/components/svgSunlight"
 
 const ThemeToggler = () => {
 
