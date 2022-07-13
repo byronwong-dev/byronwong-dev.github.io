@@ -1,19 +1,9 @@
-import { Route, Routes } from "react-router-dom"
-import About from "../about"
-import Blog from "../../blog"
-import Error from "./error"
-
+import { useRoutes } from "react-router-dom"
+import { routes } from "../../routes"
 
 const NavigationOutlet: React.FC = () => {
-
-  return <>
-    <Routes>
-        <Route path="/about" element={<About />}></Route>
-        <Route path="/blog/:slug" element={<Blog />}></Route>
-        <Route path="*" element={<Error />}></Route>
-    </Routes>
-  </>
-
+  const router = useRoutes(routes)
+  return router
 }
 
 export default NavigationOutlet

@@ -1,11 +1,11 @@
-import Layout from './pages/layout'
-import { routes } from './routes'
+import Layout from './pages/layout/default'
+import { navigations } from './routes'
 
 function App() {
 
   return (
     <div className="App">
-      <Layout routes={routes}>
+      <Layout navigations={navigations}>
       </Layout>
     </div>
   )

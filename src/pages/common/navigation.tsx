@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import ThemeToggler from "../components/themeToggler"
-import { RouteLink } from "./types"
+import { RouteLink } from "../types"
 
 type Props = {
   className?: string
