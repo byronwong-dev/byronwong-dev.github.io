@@ -1,20 +1,30 @@
+// import { readFileSync } from "fs"
 import ReactMarkdown from "react-markdown"
-import { useParams } from "react-router-dom"
+import remarkGfm from 'remark-gfm'
+// import { useParams } from "react-router-dom"
 
 
 const Blog = () => {
 
-  const params = useParams()
+  const markdown = `A paragraph with *emphasis* and **strong importance**.
 
-  const slug = params.slug
+> A block quote with ~strikethrough~ and a URL: https://reactjs.org.
 
+* Lists
+* [ ] todo
+* [x] done
+
+A table:
+
+| a | b |
+| - | - |
+| something interesting| indeed |
+`
 
   return <>
-  <div>
-    slug is {slug}
-  </div>
-  <ReactMarkdown children=""></ReactMarkdown>
-  </>
+      <ReactMarkdown children={markdown} remarkPlugins={[remarkGfm]} />
+      </>
+  
 
 }
 
