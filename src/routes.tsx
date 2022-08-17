@@ -1,5 +1,5 @@
 import { RouteObject } from "react-router-dom";
-import Blog from "./blog";
+import Blog from "./pages/blog";
 import About from "./pages/about";
 import Error from "./pages/common/error";
 import { RouteLink } from "./pages/types";
@@ -29,7 +29,7 @@ export const navigations: RouteLink[] = [
 // actual routes
 export const routes: RouteObject[] = [
   {
-    path: '/',
+    path: '/blog/:slug',
     element: <Blog/>
   },
   {

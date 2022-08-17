@@ -1,12 +1,7 @@
 ---
-__Advertisement :)__
-
-- __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
-  resize in browser.
-- __[babelfish](https://github.com/nodeca/babelfish/)__ - developer friendly
-  i18n with plurals support and easy syntax.
-
-You will like those projects!
+Author: Byron wong
+Written at: 2022-03-04
+slug: 20220718-case-study
 
 ---
 
@@ -103,7 +98,7 @@ Indented code
 
 Block code "fences"
 
-```
+``` html
 Sample text here...
 ```
 
