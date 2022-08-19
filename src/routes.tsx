@@ -3,6 +3,7 @@ import Blog from "./pages/blog";
 import About from "./pages/about";
 import Error from "./pages/common/error";
 import { RouteLink } from "./pages/types";
+import Home from "./pages/home";
 
 // navigation generated links
 export const navigations: RouteLink[] = [
@@ -28,6 +29,10 @@ export const navigations: RouteLink[] = [
 
 // actual routes
 export const routes: RouteObject[] = [
+  {
+    path: '/',
+    element: <Home/>
+  },
   {
     path: '/blog/:slug',
     element: <Blog/>
