@@ -1,0 +1,1 @@
+const e={blogs:{"20220818-does-your-code-base-smell":{filename:"20220818-does-your-code-base-smell",slug:"does-your-code-base-smell",title:"Does Your Code Base Smell",createdAt:"18th Aug 2022"}}};export{e as default};
