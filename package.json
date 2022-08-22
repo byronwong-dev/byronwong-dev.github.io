@@ -2,6 +2,7 @@
     "name": "byron_dev",
     "private": true,
     "version": "0.0.0",
+    "homepage": "https://byronwong-dev.github.io",
     "scripts": {
         "dev": "vite",
         "build": "tsc && vite build",
