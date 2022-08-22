@@ -8,7 +8,7 @@ module.exports = {
     darkMode: "class",
     theme: {
         fontFamily: {
-            display: ["Open Sans", "sans-serif"],
+            display: ["Ubuntu", "Open Sans", "sans-serif"],
             sans: ["Comfortaa", "cursive", ...defaultTheme.fontFamily.sans],
         },
         extend: {},

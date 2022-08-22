@@ -8,7 +8,7 @@ type Props = {
 }
 
 const Navigation: React.FC<Props> = (props) => {
-  return <nav className={"flex justify-around px-4 " + props.className}>
+  return <nav className={"flex flex-col sm:flex-row sm:justify-around items-end px-4 gap-y-4 " + props.className}>
     <ThemeToggler />
       {
         props.routes.map((m: RouteLink) => {

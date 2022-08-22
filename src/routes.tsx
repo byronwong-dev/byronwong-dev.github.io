@@ -13,16 +13,16 @@ export const navigations: RouteLink[] = [
   },
   {
     path: '#',
-    name: 'engineering',
+    name: 'Engineering',
     disabled: true
   },
   {
     path: '/about',
-    name: 'about',
+    name: 'About',
   },
   {
     path: '#',
-    name: 'use-cases',
+    name: 'Use-cases',
     disabled: true
   },
 ]

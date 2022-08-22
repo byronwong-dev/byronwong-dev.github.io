@@ -2,6 +2,7 @@ import minimist from "minimist";
 import * as fs from 'fs'
 import moment from "moment";
 import Yaml from 'yamljs'
+import { YamlContentItem } from "../pages/types";
 
 const toTitleCase = (str: string): string => {
     const content = str.match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
@@ -19,6 +20,7 @@ export default function writeMdFile() {
     const slug = args._.join("-").replace(/[^a-zA-Z0-9-]/g, '').toLowerCase();
     const filename = `${now.format('YYYYMMDD')}-${slug}`;
     const datetime = now.format('YYYY-MM-DD');
+    const createdAt = now.format('Do MMM YYYY')
     const template = `---
 Author: Byron Wong
 Date: ${datetime}
@@ -31,15 +33,18 @@ Slug: ${slug}
     fs.writeSync(f, template, 0)
     fs.close(f)
 
-    addEntryToContentYaml(filename, slug, title)
+    const yamlContent = { filename, slug, title, createdAt }
+
+    addEntryToContentYaml(yamlContent)
 }
 
-const addEntryToContentYaml = (filename: string, slug: string, title: string) => {
+const addEntryToContentYaml = (content: YamlContentItem) => {
     const yamlObj = Yaml.load('./src/contents/index.yml')
-    yamlObj.blogs[filename] = {
-        filename,
-        slug,
-        title
+    yamlObj.blogs[content.filename] = {
+        filename: content.filename,
+        slug: content.slug,
+        title: content.title,
+        createdAt: content.createdAt
     }
     const ymlFile = fs.openSync('./src/contents/index.yml', 'w')
     fs.writeSync(ymlFile, Yaml.stringify(yamlObj, 4, 2))
