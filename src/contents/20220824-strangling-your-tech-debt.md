@@ -26,7 +26,7 @@ It's in my interest in sharing and getting ideas and feedbacks from fellow SWE s
 
 I'll be writing occasionally, hopefully in a smaller bite-size content, I really didn't want to bore everyone :)
 
+
 _Thoughts on upcoming topics to journal:_
  - Introducing tests on low coverage code base (In the case of Small Medium Business Projects)
  - DDD rewrites and transformation (What's DDD and how to convince your non-technical IT manager to trust you!)
-

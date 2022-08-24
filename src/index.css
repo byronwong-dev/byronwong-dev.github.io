@@ -97,3 +97,10 @@ h5 {
 ul {
     list-style: inherit;
 }
+
+.markdown-body .emphasize p {
+    @apply rounded-md shadow-sm shadow-black dark:shadow-white dark:bg-gray-50 bg-gray-800 opacity-75 p-4 w-auto dark:text-gray-800 text-white;
+}
+.markdown-body .emphasize em {
+    @apply font-semibold
+}

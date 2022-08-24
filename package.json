@@ -12,17 +12,19 @@
         "new:post": "ts-node src/commands/new-post.ts"
     },
     "dependencies": {
+        "@modyfi/vite-plugin-yaml": "^1.0.3",
         "github-markdown-css": "^5.1.0",
         "highlight.js": "^11.6.0",
         "lodash": "^4.17.21",
         "markdown-it": "^13.0.1",
+        "markdown-it-container": "^3.0.0",
+        "markdown-it-emoji": "^2.0.2",
         "moment": "^2.29.4",
         "react": "^18.0.0",
         "react-dom": "^18.0.0",
         "react-markdown": "^8.0.3",
         "react-router-dom": "6",
-        "vite-plugin-markdown": "^2.1.0",
-        "@modyfi/vite-plugin-yaml": "^1.0.3"
+        "vite-plugin-markdown": "^2.1.0"
     },
     "devDependencies": {
         "@babel/preset-react": "^7.18.6",
