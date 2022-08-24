@@ -4,7 +4,7 @@ Date: 2022-08-24
 Slug: strangling-your-tech-debt-and-squeeze-out-any-usefulness-from-it
 ---
 
-# Strangling your tech debt and squeeze out any usefulness from it!
+# Strangling your tech debt and squeeze out any usefulness from it !
 
 When we have a sensible service (big or small) starts failing on you.
 
@@ -24,7 +24,7 @@ It's in my interest in sharing and getting ideas and feedbacks from fellow SWE s
 
 ### I'm imploring the readers to take this journey with me, as I journal the trade-offs, ideas and overall skill-improving practices that we all can take a bigger stride and leap forward as artisans in our crafts
 
-I'll be writing occasionally, hopefully in a smaller bite-size content, I really didn't want to bore everyone :)
+I'll be writing occasionally, hopefully in a smaller bite-size content, I really didn't want to bore everyone 🤓
 
 
 _Thoughts on upcoming topics to journal:_
