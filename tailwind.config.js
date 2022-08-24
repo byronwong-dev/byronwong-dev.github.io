@@ -9,7 +9,7 @@ module.exports = {
     theme: {
         fontFamily: {
             display: ["Ubuntu", "Open Sans", "sans-serif"],
-            sans: ["Comfortaa", "cursive", ...defaultTheme.fontFamily.sans],
+            sans: [...defaultTheme.fontFamily.sans],
         },
         extend: {},
     },

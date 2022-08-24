@@ -12,13 +12,12 @@ export const navigations: RouteLink[] = [
     name: 'byronwong.dev',
   },
   {
-    path: '#',
-    name: 'Engineering',
-    disabled: true
+    path: '/',
+    name: 'Opinions',
   },
   {
     path: '/about',
-    name: 'About',
+    name: 'Who me?',
   },
   {
     path: '#',
@@ -34,7 +33,7 @@ export const routes: RouteObject[] = [
     element: <Home/>
   },
   {
-    path: '/blog/:slug',
+    path: '/journal/:slug',
     element: <Blog/>
   },
   {

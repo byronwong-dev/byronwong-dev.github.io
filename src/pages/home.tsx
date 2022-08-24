@@ -12,7 +12,7 @@ const Home = () => {
       const maps = (await loadContentMap()).default.blogs as Record<string, {title: string, filename: string, slug: string, createdAt: string}>
       const p = []
       for (const [_, entry] of Object.entries(maps)) {
-        p.push(<Link key={entry.filename} to={`/blog/${entry.slug}`} className="markdown-body">
+        p.push(<Link key={entry.filename} to={`/journal/${entry.slug}`} className="markdown-body">
           <div className="flex flex-col gap-x-4 gap-y-2 sm:items-center sm:flex-row">
             <span className="text-base md:text-lg">
               { entry.title }
@@ -31,7 +31,7 @@ const Home = () => {
 
   return <div>
     <div className="flex flex-col px-4 gap-y-4">
-      <h1 className="text-xl font-semibold md:text-2xl font-display">Posts</h1>
+      <h1 className="text-xl font-semibold md:text-2xl font-display">Opinions</h1>
       {pages}
     </div>
   </div>

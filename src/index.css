@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500&family=Open+Sans:ital,wght@0,400;0,600;1,600&display=swap');
 @import 'github-markdown-css';
 @import 'highlight.js/styles/atom-one-dark.css';
 @tailwind base;
@@ -94,4 +93,7 @@ h3,
 h4,
 h5 {
     @apply font-semibold font-display;
+}
+ul {
+    list-style: inherit;
 }

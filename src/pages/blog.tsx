@@ -26,7 +26,7 @@ const Blog = () => {
     generateHtml()
   }, [slug])
 
-  return <article className="px-4 markdown-body" dangerouslySetInnerHTML={{ __html: renderedHtml }} />
+  return <article className="px-4 mt-4 md:mt-8 markdown-body" dangerouslySetInnerHTML={{ __html: renderedHtml }} />
 
 }
 
