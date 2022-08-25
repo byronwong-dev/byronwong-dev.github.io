@@ -6,11 +6,11 @@ Slug: strangling-your-tech-debt-and-squeeze-out-any-usefulness-from-it
 
 # Strangling your tech debt and squeeze out any usefulness from it !
 
-When we have a sensible service (big or small) starts failing on you.
+When a / multiple sensible service(s) (big or small) starts failing on you.
 
 The stench from the code base arose from the foul spaghetti monster, who happened to manifest itself from the long neglected care and inconsistent upkeeping;
 
-Aren't something that we are willing to witness
+Aren't something that we are willing to witness.
 
 But the eventuality that it surfaces is inevitable, and we have to do something about it:
 
@@ -20,11 +20,11 @@ Let's not play the blame game, 'cause sometimes it might be **US** that's the fa
 
 As we all hiking on this steep climb of attaining artisanship, away from lowly mediocrity in our crafts, we need tools and solutions.
 
-It's in my interest in sharing and getting ideas and feedbacks from fellow SWE so that I may _git gud_. Hence with this as my first post in an attempt to document my findings, sharing stories and improve my writing haha
+It's in my interest in sharing and getting ideas and feedbacks from fellow SWE so that I may _git gud_. Hence with this as my first post in an attempt to document my findings, sharing stories and improve my writing haha.
 
 ### I'm imploring the readers to take this journey with me, as I journal the trade-offs, ideas and overall skill-improving practices that we all can take a bigger stride and leap forward as artisans in our crafts
 
-I'll be writing occasionally, hopefully in a smaller bite-size content, I really didn't want to bore everyone 🤓
+I'd be writing occasionally, hopefully in a smaller bite-size content, I really didn't want to bore everyone 🤓
 
 
 _Thoughts on upcoming topics to journal:_
