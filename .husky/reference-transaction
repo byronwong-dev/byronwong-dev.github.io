@@ -1,8 +1,0 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
-GIT_CURR_BRANCH=$(git symbolic-ref --short -q HEAD 2>&1)
-
-if [ GIT_CURR_BRANCH=master ]; then
-./deploy.sh
-fi
