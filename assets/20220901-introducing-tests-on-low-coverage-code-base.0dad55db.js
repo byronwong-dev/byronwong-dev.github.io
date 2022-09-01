@@ -10,10 +10,10 @@ const e={Author:"Byron Wong",Date:"2022-09-01T00:00:00.000Z",Slug:"introducing-t
 <p>Let's take for instance, if you have a team of 5-6 developers, how do you ensure whatever deployed is working as-is? How do you sleep at night not thinking that one misaligned star in a far far away galaxy <em>aligned out of a sudden</em>, a big bad voodoo spell casted onto your code resulting you mischarge your customer and losing your money?</p>
 <p>If that's not enough to convince you, perhaps I could point you to google &quot;why do i write test&quot; to have a more sensible explanation, come back here when you're otherwise <strong><em>convinced</em></strong>.</p>
 <hr>
-<p>Test scripts aren't just hippy scripts that prints out a green statement in your console to give you an ego boost (I think it does sometimes \u{1F914}), but it's your artifact on what <em>should</em> and <em>would</em> happen to that piece of code you are testing against.</p>
-<p>Our code base will never see the end of day in a few more years to come, andon a day-to-day basis we're essentially writing <a href="https://www.martinfowler.com/bliki/SacrificialArchitecture.html">sacrificial codes</a>, and that's completely okay! When hardware and users get more sophisticated, so does the code to enable such experience.</p>
+<p>Our code base will never see the end of day in a few more years to come, and on a day-to-day basis we're essentially writing <a href="https://www.martinfowler.com/bliki/SacrificialArchitecture.html">sacrificial codes that we may very soon throw away</a>, and that's completely okay! When hardware and users get more sophisticated, so does the code to enable such experience. To complement such awesome code and features, something equally <em>cool</em> should accompany it.</p>
+<p>Test scripts aren't just hippy scripts that prints out a green statement in your console to give you an ego boost (I think it does sometimes \u{1F914}), but it gives you something <strong>better</strong>, peace of mind~</p>
 <blockquote>
-<h3>The confidence to completely tear down your code, write it in a different architectural paradigm or language, all comes from tests written.</h3>
+<h3>The confidence to completely tear down your code, write it in a different architectural paradigm or language, all comes from tests.</h3>
 </blockquote>
 <p>Believe me, <em>&quot;any test is good test&quot;</em> as long as you've writing and maintaing it.</p>
 <p>The intention here is skewed to provide you a couple extra pointers on lessons I've learnt when adding in test scripts into a low test coverage code base.</p>
