@@ -25,12 +25,7 @@ const e={Author:"Byron Wong",Date:"2022-09-01T00:00:00.000Z",Slug:"introducing-t
 <p>&quot;Shoot! Now what do we do?&quot;</p>
 </blockquote>
 <p>The framework that we're too familiar and overly rely on, will one day bite on you when it's no longer faithful to its owner -- graduate and moved on to a breaking change version, or a slight &quot;oopsies&quot;.</p>
-<p>It is true we do not test what the framework has tested, because why do we? It's been written and reviewed by a dozens of people, why should you repeat their job?</p>
-<blockquote>
-<p>We test it when we find out that it plays a part in your business domain logic.</p>
-</blockquote>
-<p>Especially on things that &quot;automagically&quot; does it for you, would you leave complete trust to the framework and let it determine your fate? Or you follow this rule: <strong>When you aren't sure, just write test on it</strong></p>
-<p>Able to identify the elements or piece of your code that is an anchor or a turning point of the logic, you definitely need to test it</p>
+<p>Let's take an example:</p>
 <pre><code class="language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">characterKilled</span>(<span class="hljs-params">name</span>) 
 {
     <span class="hljs-keyword">return</span> characterRepository.<span class="hljs-title function_">kill</span>(name)
@@ -54,4 +49,11 @@ const e={Author:"Byron Wong",Date:"2022-09-01T00:00:00.000Z",Slug:"introducing-t
 <p>Imagine the framework that provides <code>characterRepository</code> just decided to not updated <code>updated_at</code> when you upsert an entry, then you're torn.</p>
 <p>Any piece of code you see you need to retrieve, for instance <code>updated_at</code>, <code>created_at</code> which we taken for granted, if its being used, try to add a simple assertion test on it!</p>
 <h3>2. Assert on shapes of the payload if you aren't bothered with the &quot;filler&quot; contents</h3>
+<pre><code class="language-json"><span class="hljs-punctuation">{</span>
+    <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Luffy&quot;</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">&quot;occupation&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Pirate&quot;</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">&quot;bounty&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;4,000,000,000&quot;</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">&quot;currency&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;berry&quot;</span>
+<span class="hljs-punctuation">}</span>
+</code></pre>
 `;export{e as attributes,t as html};
