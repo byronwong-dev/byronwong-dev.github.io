@@ -1,4 +1,4 @@
-const e={Author:"Byron Wong",Date:"2022-09-01T00:00:00.000Z",Slug:"introducing-tests-on-low-coverage-code-base",Keywords:"test, automation, cicd, unit-test, feature-test"},o=`<h1>Introducing Tests On Low Coverage Code Base</h1>
+const e={Author:"Byron Wong",Date:"2022-09-01T00:00:00.000Z",Slug:"introducing-tests-on-low-coverage-code-base",Keywords:"test, automation, cicd, unit-test, feature-test"},t=`<h1>Introducing Tests On Low Coverage Code Base</h1>
 <blockquote>
 <h3><em>In my humble opinion, if you do not introduce test in your code base, and not maintaining the test, you're like eating pizza without dough</em></h3>
 </blockquote>
@@ -16,5 +16,6 @@ const e={Author:"Byron Wong",Date:"2022-09-01T00:00:00.000Z",Slug:"introducing-t
 <p>&quot;I don't know, I guess it might be from the migration we did? moving from rollup worker into typescript&quot;</p>
 <p>&quot;Shoot! Now what do we do?&quot;</p>
 </blockquote>
-<p>The point here is that we're ready to <a href="https://www.martinfowler.com/bliki/SacrificialArchitecture.html">sacrifice codes overtime</a>, and</p>
-`;export{e as attributes,o as html};
+<p>The point here is that we're ready to <a href="https://www.martinfowler.com/bliki/SacrificialArchitecture.html">sacrifice codes overtime</a>, and that's completely okay! When hardware and users get more sophisticated, so does the code to enable such experience. And the confidence to completely tear down your code, write it in a different architectural paradigm or language, all comes from the tests.</p>
+<p>Test scripts aren't just hippy scripts that prints out a green statement in your console to give you an ego boost (but it does sometimes \u{1F914})</p>
+`;export{e as attributes,t as html};
