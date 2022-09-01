@@ -1,1 +1,0 @@
-const e={blogs:{"20220824-stragling-your-tech-debt":{filename:"20220824-strangling-your-tech-debt",slug:"strangling-your-tech-debt-and-squeeze-out-any-usefulness-from-it",title:"Strangling your tech debt and squeeze out any usefulness from it!",createdAt:"24th Aug 2022"}}};export{e as default};
