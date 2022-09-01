@@ -15,7 +15,7 @@ const e={Author:"Byron Wong",Date:"2022-09-01T00:00:00.000Z",Slug:"introducing-t
 <blockquote>
 <h3>The confidence to completely tear down your code, write it in a different architectural paradigm or language, all comes from tests.</h3>
 </blockquote>
-<p>Believe me, <em>&quot;any test is good test&quot;</em> as long as you've writing and maintaing it.</p>
+<p>Believe me, <em>&quot;any test is good test&quot;</em>.</p>
 <p>The intention here is skewed to provide you a couple extra pointers on lessons I've learnt when adding in test scripts into a low test coverage code base.</p>
 <h3>1. Write tests on things you (or the devs before) has taken for granted</h3>
 <p>The line is something along the line:</p>
