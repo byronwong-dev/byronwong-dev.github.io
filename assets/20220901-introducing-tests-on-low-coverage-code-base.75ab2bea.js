@@ -15,8 +15,8 @@ const e={Author:"Byron Wong",Date:"2022-09-01T00:00:00.000Z",Slug:"introducing-t
 <blockquote>
 <h3>The confidence to completely tear down your code, write it in a different architectural paradigm or language, all comes from tests.</h3>
 </blockquote>
-<p>Believe me, <em>&quot;any test is good test&quot;</em>.</p>
-<p>The intention here is skewed to provide you a couple extra pointers on lessons I've learnt when adding in test scripts into a low test coverage code base.</p>
+<p>Let's jump right in, shall we?</p>
+<hr>
 <h3>1. Write tests on things you (or the devs before) has taken for granted</h3>
 <p>The line is something along the line:</p>
 <blockquote>
@@ -53,4 +53,5 @@ const e={Author:"Byron Wong",Date:"2022-09-01T00:00:00.000Z",Slug:"introducing-t
 <p>It may not look like anything important, since we just wanted to know what happened, right?</p>
 <p>Imagine the framework that provides <code>characterRepository</code> just decided to not updated <code>updated_at</code> when you upsert an entry, then you're torn.</p>
 <p>Any piece of code you see you need to retrieve, for instance <code>updated_at</code>, <code>created_at</code> which we taken for granted, if its being used, try to add a simple assertion test on it!</p>
+<h3>2. Assert on shapes of the payload if you aren't bothered with the &quot;filler&quot; contents</h3>
 `;export{e as attributes,t as html};
