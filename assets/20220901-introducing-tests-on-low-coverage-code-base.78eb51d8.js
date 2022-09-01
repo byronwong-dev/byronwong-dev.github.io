@@ -10,9 +10,11 @@ const e={Author:"Byron Wong",Date:"2022-09-01T00:00:00.000Z",Slug:"introducing-t
 <p>Now I'm not attempting to persuade you (_pardon me for what I've written prior), nor plan to write a detailed guide on how to write test, believe me, <em>&quot;any test is good test&quot;</em>.</p>
 <p>I'm skewed to give you a couple extra pointers on lessons I've learnt when adding in test scripts into a low test coverage code base.</p>
 <h3>1. Write tests on things you (or the devs before) has taken granted</h3>
-<p>The usual line is something like this:</p>
+<p>The line is something along the line:</p>
 <blockquote>
-<p>&quot;Why on earth wasn't created_at being saved?&quot;
-&quot;I don't know, I guess it might be from the migration we did? moving from rollup worker into typescript&quot;</p>
+<p>&quot;Why on earth wasn't created_at being saved?&quot;</p>
+<p>&quot;I don't know, I guess it might be from the migration we did? moving from rollup worker into typescript&quot;</p>
+<p>&quot;Shoot! Now what do we do?&quot;</p>
 </blockquote>
+<p>The point here is that</p>
 `;export{e as attributes,o as html};
