@@ -16,5 +16,5 @@ const e={Author:"Byron Wong",Date:"2022-09-01T00:00:00.000Z",Slug:"introducing-t
 <p>&quot;I don't know, I guess it might be from the migration we did? moving from rollup worker into typescript&quot;</p>
 <p>&quot;Shoot! Now what do we do?&quot;</p>
 </blockquote>
-<p>The point here is that</p>
+<p>The point here is that we're ready to <a href="https://www.martinfowler.com/bliki/SacrificialArchitecture.html">sacrifice codes overtime</a>, and</p>
 `;export{e as attributes,o as html};
