@@ -84,14 +84,15 @@ const s={Author:"Byron Wong",Date:"2022-09-01T00:00:00.000Z",Slug:"introducing-t
 }
 </code></pre>
 <p>How would you want to refactor this!! So you'd write negative test to assert it first,</p>
-<pre><code class="language-js"><span class="hljs-comment">// write what shouldn&#x27;t happen</span>
+<pre><code class="language-js"><span class="hljs-comment">// assert what should or shouldn&#x27;t happen</span>
 <span class="hljs-keyword">function</span> <span class="hljs-title function_">testLackOfResourceUnableToBuildBase</span>(<span class="hljs-params"></span>)
 {
     <span class="hljs-keyword">await</span> <span class="hljs-title function_">expect</span>(<span class="hljs-title function_">buildBase</span>(customer)).<span class="hljs-property">rejects</span>.<span class="hljs-title function_">toThrow</span>(<span class="hljs-string">&#x27;Insufficient Resource To Build Base!&#x27;</span>);
 }
 </code></pre>
 <p>then you rewrite it with: <strong>Say it with me \u{1F44F} con-\u{1F44F}-fi-\u{1F44F}-dence</strong></p>
-<pre><code class="language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">buildBase</span>(<span class="hljs-params">customer</span>)
+<pre><code class="language-js"><span class="hljs-comment">// write it anyhow, you&#x27;ll have it TEST for you</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">buildBase</span>(<span class="hljs-params">customer</span>)
 {
     <span class="hljs-keyword">if</span>(customer.<span class="hljs-title function_">isLackOfResource</span>()) {
         <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">BaseBuildException</span>(<span class="hljs-string">&#x27;Insufficient Resource To Build Base!&#x27;</span>)
