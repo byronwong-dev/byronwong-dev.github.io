@@ -5,5 +5,9 @@ export type RouteLink = {
 }
 
 export type YamlContentItem = {
-  filename: string; slug: string; title: string; createdAt: string;
+  filename: string;
+  slug: string;
+  title: string;
+  createdAt: string;
+  isoString: string;
 }

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { loadContentMap } from '../lib/helper'
+import { YamlContentItem } from './types'
 
 const Home = () => {
 
@@ -9,9 +10,11 @@ const Home = () => {
   useEffect(() => {
 
     async function getHomePageListings () {
-      const maps = (await loadContentMap()).default.blogs as Record<string, {title: string, filename: string, slug: string, createdAt: string}>
+      const maps = (await loadContentMap()).default.blogs as Record<string, YamlContentItem>
       const p = []
-      for (const [_, entry] of Object.entries(maps)) {
+      for (const [_, entry] of Object.entries(maps).sort((a, b) => {
+        return Date.parse(a[1].isoString) < Date.parse(b[1].isoString) ? 1 : -1;
+      })) {
         p.push(<Link key={entry.filename} to={`/journal/${entry.slug}`} className="markdown-body">
           <div className="flex flex-col gap-x-4 gap-y-2 sm:items-center sm:flex-row">
             <span className="text-base md:text-lg">
