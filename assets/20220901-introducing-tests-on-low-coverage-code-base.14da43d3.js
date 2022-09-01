@@ -64,5 +64,24 @@ const e={Author:"Byron Wong",Date:"2022-09-01T00:00:00.000Z",Slug:"introducing-t
 }); # atleast we check its there
 </code></pre>
 <p>This is especially true when the payload is intended to be used in an contract, to be used by other services! This will ring true, when you are moving or rewriting the implementation, the tests gives you peace of mind that it works and is expecting the same payload shape</p>
-<h3>3.</h3>
+<h3>3. Filling up negative tests to bump up coverage</h3>
+<p>Often times we're too engulfed by the happy path warmth but left out the conditionals early rejection and returns. It's also a great way to pair program with a junior dev in refactoring their code, for instance:</p>
+<pre><code class="language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">buildBase</span>(<span class="hljs-params">customer</span>)
+{
+    <span class="hljs-keyword">if</span>(!customer.<span class="hljs-title function_">isLackOfResource</span>()) {
+        <span class="hljs-keyword">if</span> (!customer.<span class="hljs-title function_">isLackOfArmor</span>()) {
+            ...
+        } <span class="hljs-keyword">else</span> {
+            ...
+        }
+        ...
+        ...
+    } <span class="hljs-keyword">else</span> {
+        ...
+    }
+}
+</code></pre>
+<p>How would you want to refactor this!!</p>
+<p>So you'd write negative test to assert it first, then you rewrite it with:</p>
+<h4><strong>Say it with me \u{1F44F} con-\u{1F44F}-fi-\u{1F44F}-dence</strong></h4>
 `;export{e as attributes,t as html};
