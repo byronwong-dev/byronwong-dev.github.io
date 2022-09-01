@@ -20,7 +20,8 @@ export default function writeMdFile() {
     const slug = args._.join("-").replace(/[^a-zA-Z0-9-]/g, '').toLowerCase();
     const filename = `${now.format('YYYYMMDD')}-${slug}`;
     const datetime = now.format('YYYY-MM-DD');
-    const createdAt = now.format('Do MMM YYYY')
+    const createdAt = now.format('Do MMM YYYY');
+    const isoString = now.toISOString();
     const template = `---
 Author: Byron Wong
 Date: ${datetime}
@@ -33,7 +34,7 @@ Slug: ${slug}
     fs.writeSync(f, template, 0)
     fs.close(f)
 
-    const yamlContent = { filename, slug, title, createdAt }
+    const yamlContent = { filename, slug, title, createdAt, isoString }
 
     addEntryToContentYaml(yamlContent)
 }
