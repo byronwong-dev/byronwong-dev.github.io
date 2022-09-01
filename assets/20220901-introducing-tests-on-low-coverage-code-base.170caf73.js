@@ -66,7 +66,7 @@ const s={Author:"Byron Wong",Date:"2022-09-01T00:00:00.000Z",Slug:"introducing-t
 <p>This is especially true when the payload is intended to be used in an contract, to be used by other services! This will ring true, when you are moving or rewriting the implementation, the tests gives you peace of mind that it works and is expecting the same payload shape</p>
 <h3>3. Filling up negative tests to bump up coverage</h3>
 <p>Often times we're too engulfed by the happy path, leaving out (intentionally or not) the negatives sad patth. By writing up negative tests, it not only bumps up your coverage, but also allows you to comfortably embrace the situation below, where you're pair programming with a junior dev in refactoring their code, for instance:</p>
-<pre><code class="language-js"><span class="hljs-comment">// junior dev written code like this</span>
+<pre><code class="language-js"><span class="hljs-comment">// junior dev written code:</span>
 <span class="hljs-comment">// unclear goal or purpose on what they try to achieve</span>
 <span class="hljs-keyword">function</span> <span class="hljs-title function_">buildBase</span>(<span class="hljs-params">customer</span>)
 {
