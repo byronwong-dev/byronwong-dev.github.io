@@ -21,4 +21,7 @@ const e={Author:"Byron Wong",Date:"2022-09-01T00:00:00.000Z",Slug:"introducing-t
 <p>&quot;I don't know, I guess it might be from the migration we did? moving to typescript and ditching the old transpiler tool?&quot;</p>
 <p>&quot;Shoot! Now what do we do?&quot;</p>
 </blockquote>
+<p>The framework that we're too familiar and overly rely on, will one day bite on you when it's no longer faithful to its owner -- graduating into a breaking change version. It is true we do not test what the framework has tested, but rather depending on your approach in test, it makes a difference and it may come to a point where we may need to test something that the framework has &quot;automagically&quot; handle it for you.</p>
+<p>Rule of thumb: when you aren't sure, just write test on it</p>
+<p>2nd rule of thumb: if you need to log it, perhaps write a test on it</p>
 `;export{e as attributes,t as html};
