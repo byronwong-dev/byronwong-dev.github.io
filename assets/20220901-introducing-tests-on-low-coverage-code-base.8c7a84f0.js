@@ -1,4 +1,4 @@
-const e={Author:"Byron Wong",Date:"2022-09-01T00:00:00.000Z",Slug:"introducing-tests-on-low-coverage-code-base",Keywords:"test, automation, cicd, unit-test, feature-test"},t=`<h1>Introducing Tests On Low Coverage Code Base</h1>
+const s={Author:"Byron Wong",Date:"2022-09-01T00:00:00.000Z",Slug:"introducing-tests-on-low-coverage-code-base",Keywords:"test, automation, cicd, unit-test, feature-test"},n=`<h1>Introducing Tests On Low Coverage Code Base</h1>
 <p>If I ask you, what's the bread and butter in your code base?</p>
 <p>Git version control? Linter? true to those, but equally important element would be -- your tests!</p>
 <blockquote>
@@ -81,7 +81,22 @@ const e={Author:"Byron Wong",Date:"2022-09-01T00:00:00.000Z",Slug:"introducing-t
     }
 }
 </code></pre>
-<p>How would you want to refactor this!!</p>
-<p>So you'd write negative test to assert it first, then you rewrite it with:</p>
-<h4><strong>Say it with me \u{1F44F} con-\u{1F44F}-fi-\u{1F44F}-dence</strong></h4>
-`;export{e as attributes,t as html};
+<p>How would you want to refactor this!! So you'd write negative test to assert it first,</p>
+<pre><code class="language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">testLackOfResourceUnableToBuildBase</span>(<span class="hljs-params"></span>)
+{
+    <span class="hljs-keyword">await</span> <span class="hljs-title function_">expect</span>(<span class="hljs-title function_">buildBase</span>(customer)).<span class="hljs-property">rejects</span>.<span class="hljs-title function_">toThrow</span>(<span class="hljs-string">&#x27;Insufficient Resource To Build Base!&#x27;</span>);
+}
+</code></pre>
+<p>then you rewrite it with: <strong>Say it with me \u{1F44F} con-\u{1F44F}-fi-\u{1F44F}-dence</strong></p>
+<pre><code class="language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">buildBase</span>(<span class="hljs-params">customer</span>)
+{
+    <span class="hljs-keyword">if</span>(customer.<span class="hljs-title function_">isLackOfResource</span>()) {
+        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">BaseBuildException</span>(<span class="hljs-string">&#x27;Insufficient Resource To Build Base!&#x27;</span>)
+    }
+
+    <span class="hljs-keyword">if</span>(customer.<span class="hljs-title function_">isLackOfArmor</span>()) {
+        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">BaseBuildException</span>(<span class="hljs-string">&#x27;Insufficient Armor To Build Base!&#x27;</span>)
+    }
+}
+</code></pre>
+`;export{s as attributes,n as html};
