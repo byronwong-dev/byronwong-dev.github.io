@@ -56,4 +56,13 @@ const e={Author:"Byron Wong",Date:"2022-09-01T00:00:00.000Z",Slug:"introducing-t
     <span class="hljs-attr">&quot;currency&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;berry&quot;</span>
 <span class="hljs-punctuation">}</span>
 </code></pre>
+<p>If the &quot;filler&quot; content ain't much of a use, but rather interested in a particular element, atleast give it a shape test like so:</p>
+<pre><code class="language-js"><span class="hljs-title function_">expect</span>(payload.<span class="hljs-property">bounty</span>).<span class="hljs-title function_">toEqual</span>(<span class="hljs-number">4000000000</span>); # yes we are happy <span class="hljs-keyword">with</span> the amount
+<span class="hljs-title function_">expect</span>(payload).<span class="hljs-title function_">matchInObject</span>({
+    <span class="hljs-string">&quot;name&quot;</span>: expect.<span class="hljs-title function_">any</span>(<span class="hljs-title class_">String</span>),
+    <span class="hljs-string">&quot;occupation&quot;</span>: expect.<span class="hljs-title function_">any</span>(<span class="hljs-title class_">String</span>),
+}); # atleast we check its there
+</code></pre>
+<p>This is especially true when the payload is intended to be used in an contract, to be used by other services! This will ring true, when you are moving or rewriting the implementation, the tests gives you peace of mind that it works and is expecting the same payload shape</p>
+<h3>3.</h3>
 `;export{e as attributes,t as html};
