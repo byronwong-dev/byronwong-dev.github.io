@@ -11,6 +11,8 @@ const e={Author:"Byron Wong",Date:"2022-09-01T00:00:00.000Z",Slug:"introducing-t
 <p>I'm skewed to give you a couple extra pointers on lessons I've learnt when adding in test scripts into a low test coverage code base.</p>
 <h3>1. Write tests on things you (or the devs before) has taken granted</h3>
 <p>The usual line is something like this:</p>
-<p>&quot;Why on earth wasn't created_at being saved?&quot;</p>
-<p>&quot;I don't know, I guess it might be from the migration we did? moving from rollup worker into typescript&quot;</p>
+<blockquote>
+<p>&quot;Why on earth wasn't created_at being saved?&quot;
+&quot;I don't know, I guess it might be from the migration we did? moving from rollup worker into typescript&quot;</p>
+</blockquote>
 `;export{e as attributes,o as html};
