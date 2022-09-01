@@ -17,5 +17,5 @@ const e={Author:"Byron Wong",Date:"2022-09-01T00:00:00.000Z",Slug:"introducing-t
 <p>&quot;Shoot! Now what do we do?&quot;</p>
 </blockquote>
 <p>The point here is that we're ready to <a href="https://www.martinfowler.com/bliki/SacrificialArchitecture.html">sacrifice codes overtime</a>, and that's completely okay! When hardware and users get more sophisticated, so does the code to enable such experience. And the confidence to completely tear down your code, write it in a different architectural paradigm or language, all comes from the tests.</p>
-<p>Test scripts aren't just hippy scripts that prints out a green statement in your console to give you an ego boost (but it does sometimes \u{1F914})</p>
+<p>Test scripts aren't just hippy scripts that prints out a green statement in your console to give you an ego boost (I think it does sometimes \u{1F914}), but it's your artifact on what <em>should</em> and <em>would</em> happen to that piece of code you are testing against.</p>
 `;export{e as attributes,t as html};
