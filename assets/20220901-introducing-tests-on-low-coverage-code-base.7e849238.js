@@ -27,6 +27,18 @@ const e={Author:"Byron Wong",Date:"2022-09-01T00:00:00.000Z",Slug:"introducing-t
 <p>We test it when we find out that it plays a part in your business domain logic.</p>
 </blockquote>
 <p>Especially on things that &quot;automagically&quot; does it for you, would you leave complete trust to the framework and let it determine your fate? Or you follow this rule: <strong>When you aren't sure, just write test on it</strong></p>
-<p>Rule of thumb: when you aren't sure, just write test on it</p>
+<p>Able to identify the elements or piece of your code that is an anchor or a turning point of the logic, you definitely need to test it</p>
+<pre><code class="language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">characterKilled</span>(<span class="hljs-params">name</span>) 
+{
+    <span class="hljs-keyword">return</span> characterRepository.<span class="hljs-title function_">kill</span>(name)
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">characterDiedOn</span>(<span class="hljs-params">name</span>)
+{
+    <span class="hljs-keyword">const</span> character = characterRepository.<span class="hljs-title function_">get</span>(name)
+    <span class="hljs-keyword">return</span> character.<span class="hljs-property">deleted_at</span>;
+}
+</code></pre>
+<p>If you look at this piece of function above, we know that <code>deleted_at</code> is pivotal element of <code>character</code>, and it should be tested!</p>
 <p>2nd rule of thumb: if you need to log it, perhaps write a test on it</p>
 `;export{e as attributes,t as html};
