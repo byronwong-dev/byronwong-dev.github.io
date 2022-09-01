@@ -10,15 +10,15 @@ const e={Author:"Byron Wong",Date:"2022-09-01T00:00:00.000Z",Slug:"introducing-t
 <p>Test scripts aren't just hippy scripts that prints out a green statement in your console to give you an ego boost (I think it does sometimes \u{1F914}), but it's your artifact on what <em>should</em> and <em>would</em> happen to that piece of code you are testing against.</p>
 <p>Our code base will never see the end of day in a few more years to come, andon a day-to-day basis we're essentially writing <a href="https://www.martinfowler.com/bliki/SacrificialArchitecture.html">sacrificial codes</a>, and that's completely okay! When hardware and users get more sophisticated, so does the code to enable such experience.</p>
 <blockquote>
-<h3>The confidence to completely tear down your code, write it in a different architectural paradigm or language, all comes from the tests.</h3>
+<h3>The confidence to completely tear down your code, write it in a different architectural paradigm or language, all comes from tests written.</h3>
 </blockquote>
-<p>Now I'm not attempting to persuade you (<em>pardon me for what I've written prior</em>), nor plan to write a detailed guide on how to write test, believe me, <em>&quot;any test is good test&quot;</em>.</p>
-<p>I'm skewed to the idea to provide you a couple extra pointers on lessons I've learnt when adding in test scripts into a low test coverage code base.</p>
+<p>Believe me, <em>&quot;any test is good test&quot;</em> as long as you've writing and maintaing it.</p>
+<p>The intention here is skewed to provide you a couple extra pointers on lessons I've learnt when adding in test scripts into a low test coverage code base.</p>
 <h3>1. Write tests on things you (or the devs before) has taken for granted</h3>
 <p>The line is something along the line:</p>
 <blockquote>
 <p>&quot;Why on earth wasn't created_at being saved?&quot;</p>
-<p>&quot;I don't know, I guess it might be from the migration we did? moving from rollup worker into typescript&quot;</p>
+<p>&quot;I don't know, I guess it might be from the migration we did? moving to typescript and ditching the old transpiler tool?&quot;</p>
 <p>&quot;Shoot! Now what do we do?&quot;</p>
 </blockquote>
 `;export{e as attributes,t as html};
