@@ -40,5 +40,14 @@ const e={Author:"Byron Wong",Date:"2022-09-01T00:00:00.000Z",Slug:"introducing-t
 }
 </code></pre>
 <p>If you look at this piece of function above, we know that <code>deleted_at</code> is pivotal element of <code>character</code>, and it should be tested!</p>
-<p>2nd rule of thumb: if you need to log it, perhaps write a test on it</p>
+<p>But let's take a look at the bottom:</p>
+<pre><code class="language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">lastIncidentHappenedToCharacterAt</span>(<span class="hljs-params">name</span>)
+{
+    <span class="hljs-keyword">const</span> character = characterRepository.<span class="hljs-title function_">get</span>(name)
+    <span class="hljs-keyword">return</span> character.<span class="hljs-property">updated_at</span>;
+}
+</code></pre>
+<p>It may not look like anything important, since we just wanted to know what happened, right?</p>
+<p>Imagine the framework that provides <code>characterRepository</code> just decided to not updated <code>updated_at</code> when you upsert an entry, then you're torn.</p>
+<p>Any piece of code you see you need to retrieve, for instance <code>updated_at</code>, <code>created_at</code> which we taken for granted, if its being used, try to add a simple assertion test on it!</p>
 `;export{e as attributes,t as html};
