@@ -57,16 +57,18 @@ const s={Author:"Byron Wong",Date:"2022-09-01T00:00:00.000Z",Slug:"introducing-t
 <span class="hljs-punctuation">}</span>
 </code></pre>
 <p>If the &quot;filler&quot; content ain't much of a use, but rather interested in a particular element, atleast give it a shape test like so:</p>
-<pre><code class="language-js"><span class="hljs-title function_">expect</span>(payload.<span class="hljs-property">bounty</span>).<span class="hljs-title function_">toEqual</span>(<span class="hljs-number">4000000000</span>); # yes we are happy <span class="hljs-keyword">with</span> the amount
+<pre><code class="language-js"><span class="hljs-title function_">expect</span>(payload.<span class="hljs-property">bounty</span>).<span class="hljs-title function_">toEqual</span>(<span class="hljs-number">4000000000</span>); <span class="hljs-comment">// yes we are happy with the amount</span>
 <span class="hljs-title function_">expect</span>(payload).<span class="hljs-title function_">matchInObject</span>({
     <span class="hljs-string">&quot;name&quot;</span>: expect.<span class="hljs-title function_">any</span>(<span class="hljs-title class_">String</span>),
     <span class="hljs-string">&quot;occupation&quot;</span>: expect.<span class="hljs-title function_">any</span>(<span class="hljs-title class_">String</span>),
-}); # atleast we check its there
+}); <span class="hljs-comment">// atleast we check its there</span>
 </code></pre>
 <p>This is especially true when the payload is intended to be used in an contract, to be used by other services! This will ring true, when you are moving or rewriting the implementation, the tests gives you peace of mind that it works and is expecting the same payload shape</p>
 <h3>3. Filling up negative tests to bump up coverage</h3>
-<p>Often times we're too engulfed by the happy path warmth but left out the conditionals early rejection and returns. It's also a great way to pair program with a junior dev in refactoring their code, for instance:</p>
-<pre><code class="language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">buildBase</span>(<span class="hljs-params">customer</span>)
+<p>Often times we're too engulfed by the happy path, leaving out (intentionally or not) the negatives sad patth. By writing up negative tests, it not only bumps up your coverage, but also allows you to comfortably embrace the situation below, where you're pair programming with a junior dev in refactoring their code, for instance:</p>
+<pre><code class="language-js"><span class="hljs-comment">// junior dev written code like this</span>
+<span class="hljs-comment">// unclear goal or purpose on what they try to achieve</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">buildBase</span>(<span class="hljs-params">customer</span>)
 {
     <span class="hljs-keyword">if</span>(!customer.<span class="hljs-title function_">isLackOfResource</span>()) {
         <span class="hljs-keyword">if</span> (!customer.<span class="hljs-title function_">isLackOfArmor</span>()) {
@@ -82,7 +84,8 @@ const s={Author:"Byron Wong",Date:"2022-09-01T00:00:00.000Z",Slug:"introducing-t
 }
 </code></pre>
 <p>How would you want to refactor this!! So you'd write negative test to assert it first,</p>
-<pre><code class="language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">testLackOfResourceUnableToBuildBase</span>(<span class="hljs-params"></span>)
+<pre><code class="language-js"><span class="hljs-comment">// write what shouldn&#x27;t happen</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">testLackOfResourceUnableToBuildBase</span>(<span class="hljs-params"></span>)
 {
     <span class="hljs-keyword">await</span> <span class="hljs-title function_">expect</span>(<span class="hljs-title function_">buildBase</span>(customer)).<span class="hljs-property">rejects</span>.<span class="hljs-title function_">toThrow</span>(<span class="hljs-string">&#x27;Insufficient Resource To Build Base!&#x27;</span>);
 }
