@@ -7,8 +7,8 @@ const e={Author:"Byron Wong",Date:"2022-09-01T00:00:00.000Z",Slug:"introducing-t
 <p>If you do not realize or ditched the use of tests in your code base. &quot;Lacking of nutrients&quot; is how I would put it.</p>
 <p>Why?</p>
 <p>Simple, you won't have the energy or confidence to enable you in your journey to &quot;scale&quot;, &quot;transform&quot;, &quot;revolutionize&quot; or &quot;disrupt the industry&quot; \u{1F64A}</p>
-<p>Let's take for instance, if you have a team of 5-6 developers, how do you ensure whatever deployed is working as-is? How do you sleep at night not thinking one day something might happen and you incorrectly gave out money to your customer?</p>
-<p>If that's not enough to convince you, perhaps I could point you to google &quot;why do i write test&quot;, come back here when you're otherwise <strong><em>convinced</em></strong>.</p>
+<p>Let's take for instance, if you have a team of 5-6 developers, how do you ensure whatever deployed is working as-is? How do you sleep at night not thinking that one misaligned star in a far far away galaxy <em>aligned out of a sudden</em>, a big bad voodoo spell casted onto your code resulting you mischarge your customer and losing your money?</p>
+<p>If that's not enough to convince you, perhaps I could point you to google &quot;why do i write test&quot; to have a more sensible explanation, come back here when you're otherwise <strong><em>convinced</em></strong>.</p>
 <p>Test scripts aren't just hippy scripts that prints out a green statement in your console to give you an ego boost (I think it does sometimes \u{1F914}), but it's your artifact on what <em>should</em> and <em>would</em> happen to that piece of code you are testing against.</p>
 <p>Our code base will never see the end of day in a few more years to come, andon a day-to-day basis we're essentially writing <a href="https://www.martinfowler.com/bliki/SacrificialArchitecture.html">sacrificial codes</a>, and that's completely okay! When hardware and users get more sophisticated, so does the code to enable such experience.</p>
 <blockquote>
