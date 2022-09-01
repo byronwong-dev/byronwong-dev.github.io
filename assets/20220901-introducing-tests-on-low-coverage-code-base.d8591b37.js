@@ -1,4 +1,4 @@
-const o={Author:"Byron Wong",Date:"2022-09-01T00:00:00.000Z",Slug:"introducing-tests-on-low-coverage-code-base",Keywords:"test, automation, cicd, unit-test, feature-test"},e=`<h1>Introducing Tests On Low Coverage Code Base</h1>
+const e={Author:"Byron Wong",Date:"2022-09-01T00:00:00.000Z",Slug:"introducing-tests-on-low-coverage-code-base",Keywords:"test, automation, cicd, unit-test, feature-test"},o=`<h1>Introducing Tests On Low Coverage Code Base</h1>
 <blockquote>
 <h3><em>In my humble opinion, if you do not introduce test in your code base, and not maintaining the test, you're like eating pizza without dough</em></h3>
 </blockquote>
@@ -8,4 +8,9 @@ const o={Author:"Byron Wong",Date:"2022-09-01T00:00:00.000Z",Slug:"introducing-t
 <p>Let's take for instance, if you have a team of 5-6 developers, how do you ensure whatever deployed is working as-is? How do you sleep at night not thinking one day something might happen and you incorrectly gave out money to your customer?</p>
 <p>If that's not enough to convince you, perhaps I could point you to google &quot;why do i write test&quot;, come back here when you're otherwise <strong><em>convinced</em></strong>.</p>
 <p>Now I'm not attempting to persuade you (_pardon me for what I've written prior), nor plan to write a detailed guide on how to write test, believe me, <em>&quot;any test is good test&quot;</em>.</p>
-`;export{o as attributes,e as html};
+<p>I'm skewed to give you a couple extra pointers on lessons I've learnt when adding in test scripts into a low test coverage code base.</p>
+<h3>1. Write tests on things you (or the devs before) has taken granted</h3>
+<p>The usual line is something like this:</p>
+<p>&quot;Why on earth wasn't created_at being saved?&quot;</p>
+<p>&quot;I don't know, I guess it might be from the migration we did? moving from rollup worker into typescript&quot;</p>
+`;export{e as attributes,o as html};
