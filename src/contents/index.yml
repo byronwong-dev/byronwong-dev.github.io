@@ -11,3 +11,8 @@ blogs:
     title: 'Introducing Tests On Low Coverage Code Base'
     createdAt: '1st Sep 2022'
     isoString: '2022-09-01T14:33:51.526Z'
+  20220918-tech-debt-from-rigid-database-structure-catches-up:
+    filename: 20220918-tech-debt-from-rigid-database-structure-catches-up
+    slug: tech-debt-from-rigid-database-structure-catches-up
+    title: 'Tech Debt From Rigid Database Structure Catches Up'
+    createdAt: '18th Sep 2022'
